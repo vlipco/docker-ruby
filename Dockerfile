@@ -9,7 +9,7 @@ RUN mkdir -p /app && groupadd -r fakeuser -f -g 433 && \
 
 RUN yum upgrade -y && yum install -y vim unzip bzip2 tar gcc make automake gdbm-devel libffi-devel libyaml-devel \
   openssl-devel ncurses-devel readline-devel zlib-devel ruby-devel \
-  libxml2 libxml2-devel libxslt libxslt-devel git mysql-devel
+  libxml2 libxml2-devel libxslt libxslt-devel git mysql-devel sqlite-devel
 
 RUN cd /usr/local/src && curl -L -s \
   "https://github.com/postmodern/ruby-install/archive/v0.4.3.tar.gz" \
